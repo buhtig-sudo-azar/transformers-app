@@ -31,6 +31,7 @@ import {
 
 const EMBEDDINGS_APP_URL = "https://embeddings-app.vercel.app/";
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
+const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
 const NN_LEARNING_APP_URL = "https://nn-learning-app.vercel.app/";
 
 function Hero() {
@@ -245,16 +246,16 @@ function SiteFooter() {
         <p className="text-xs mt-3 max-w-3xl">
           Все песочницы работают прямо в браузере на чистом React + TypeScript.
           Прогресс сохраняется локально в localStorage — твои ответы и метки
-          не уходят на сервер. Это приложение — продолжение двух курсов:{" "}
+          не уходят на сервер. Это приложение — продолжение серии из трёх курсов:{" "}
           <a
-            href={EMBEDDINGS_APP_URL}
+            href={ML_S_NULA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-amber-700 dark:hover:text-amber-300"
           >
-            «Эмбеддинги и attention»
-          </a>{" "}
-          и{" "}
+            «ML с нуля»
+          </a>
+          {", "}
           <a
             href={TOKENIZATSIYA_URL}
             target="_blank"
@@ -262,6 +263,15 @@ function SiteFooter() {
             className="underline hover:text-amber-700 dark:hover:text-amber-300"
           >
             «Токенизация»
+          </a>
+          {" и "}
+          <a
+            href={EMBEDDINGS_APP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-amber-700 dark:hover:text-amber-300"
+          >
+            «Эмбеддинги и attention»
           </a>
           .
         </p>

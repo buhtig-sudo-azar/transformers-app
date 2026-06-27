@@ -9,6 +9,7 @@ import { ArrowUpRight, ExternalLink, Code, BookOpen, Boxes, Wrench, Network, Lay
 
 const EMBEDDINGS_APP_URL = "https://embeddings-app.vercel.app/";
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
+const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
 const NN_LEARNING_APP_URL = "https://nn-learning-app.vercel.app/";
 
 const RESOURCES: Array<{
@@ -286,8 +287,8 @@ export function Module10Next() {
           Возврат к материнским курсам
         </div>
         <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">
-          Это приложение — продолжение двух курсов. Если хочешь вернуться к
-          ним — кнопки ниже ведут на их главные страницы.
+          Это приложение — продолжение серии из трёх курсов. Если хочешь
+          вернуться к ним — кнопки ниже ведут на их главные страницы.
         </p>
         <div className="flex flex-wrap gap-2 justify-center">
           <a href={EMBEDDINGS_APP_URL} target="_blank" rel="noopener noreferrer">
@@ -307,6 +308,16 @@ export function Module10Next() {
             >
               <ArrowUpRight className="h-4 w-4 mr-1.5" />
               Токенизация
+            </Button>
+          </a>
+          <a href={ML_S_NULA_URL} target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-teal-500 text-teal-700 hover:bg-teal-50 dark:text-teal-300 dark:hover:bg-teal-950/40"
+            >
+              <ArrowUpRight className="h-4 w-4 mr-1.5" />
+              ML с нуля
             </Button>
           </a>
         </div>
