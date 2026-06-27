@@ -241,7 +241,7 @@ function SiteFooter() {
         <p className="text-xs mt-3 max-w-3xl">
           Все песочницы работают прямо в браузере на чистом React + TypeScript.
           Прогресс сохраняется локально в localStorage — твои ответы и метки
-          не уходят на сервер. Это приложение — четвёртый курс в серии из семи:{" "}
+          не уходят на сервер. Это приложение — четвёртый курс в серии из десяти:{" "}
           <a href={ML_S_NULA_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«ML с нуля»</a>
           {" → "}<a href={TOKENIZATSIYA_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«Токенизация»</a>
           {" → "}<a href={EMBEDDINGS_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«Эмбеддинги и attention»</a>
