@@ -33,6 +33,8 @@ const EMBEDDINGS_APP_URL = "https://embeddings-app.vercel.app/";
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
 const ML_S_NULA_URL = "https://ml-s-nula.vercel.app/";
 const NN_LEARNING_APP_URL = "https://nn-learning-app.vercel.app/";
+const LLM_APP_URL = "https://llms-app.vercel.app/";
+const ALIGNMENT_URL = "https://alignment-app.vercel.app/";
 
 function Hero() {
   const { completedCount, totalCount, hydrated, resetAll } = useProgress();
@@ -65,22 +67,15 @@ function Hero() {
               <ArrowLeft className="h-3.5 w-3.5" />
               Назад к курсу «Эмбеддинги и attention»
             </a>
-            <Badge
-              variant="outline"
-              className="mb-3 bg-amber-50 border-amber-200 text-amber-700 dark:bg-amber-950/50 dark:border-amber-800/60 dark:text-amber-300"
-            >
-              <Sparkles className="h-3 w-3 mr-1" />
-              Продолжение: после attention
-            </Badge>
             <a
               href={NN_LEARNING_APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex"
+              className="inline-flex mb-3"
             >
               <Badge
                 variant="outline"
-                className="mb-3 ml-2 bg-rose-50 border-rose-300 text-rose-700 hover:bg-rose-100 dark:bg-rose-950/50 dark:border-rose-700 dark:text-rose-300 transition-colors"
+                className="bg-rose-50 border-rose-300 text-rose-700 hover:bg-rose-100 dark:bg-rose-950/50 dark:border-rose-700 dark:text-rose-300 transition-colors"
               >
                 <Sparkles className="h-3 w-3 mr-1" />
                 Продолжение: как нейросети учатся →
@@ -246,33 +241,14 @@ function SiteFooter() {
         <p className="text-xs mt-3 max-w-3xl">
           Все песочницы работают прямо в браузере на чистом React + TypeScript.
           Прогресс сохраняется локально в localStorage — твои ответы и метки
-          не уходят на сервер. Это приложение — продолжение серии из трёх курсов:{" "}
-          <a
-            href={ML_S_NULA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-amber-700 dark:hover:text-amber-300"
-          >
-            «ML с нуля»
-          </a>
-          {", "}
-          <a
-            href={TOKENIZATSIYA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-amber-700 dark:hover:text-amber-300"
-          >
-            «Токенизация»
-          </a>
-          {" и "}
-          <a
-            href={EMBEDDINGS_APP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-amber-700 dark:hover:text-amber-300"
-          >
-            «Эмбеддинги и attention»
-          </a>
+          не уходят на сервер. Это приложение — четвёртый курс в серии из семи:{" "}
+          <a href={ML_S_NULA_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«ML с нуля»</a>
+          {" → "}<a href={TOKENIZATSIYA_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«Токенизация»</a>
+          {" → "}<a href={EMBEDDINGS_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«Эмбеддинги и attention»</a>
+          {" → "}<strong className="text-foreground">«Трансформеры»</strong>
+          {" → "}<a href={NN_LEARNING_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«Как нейросети учатся»</a>
+          {" → "}<a href={LLM_APP_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«Большие языковые модели»</a>
+          {" → "}<a href={ALIGNMENT_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-700 dark:hover:text-amber-300">«Адаптация и alignment»</a>
           .
         </p>
 
