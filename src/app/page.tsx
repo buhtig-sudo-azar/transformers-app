@@ -31,6 +31,7 @@ import {
 
 const EMBEDDINGS_APP_URL = "https://embeddings-app.vercel.app/";
 const TOKENIZATSIYA_URL = "https://tokenizatsiya-app.vercel.app/";
+const NN_LEARNING_APP_URL = "https://nn-learning-app.vercel.app/";
 
 function Hero() {
   const { completedCount, totalCount, hydrated, resetAll } = useProgress();
@@ -70,6 +71,20 @@ function Hero() {
               <Sparkles className="h-3 w-3 mr-1" />
               Продолжение: после attention
             </Badge>
+            <a
+              href={NN_LEARNING_APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex"
+            >
+              <Badge
+                variant="outline"
+                className="mb-3 ml-2 bg-rose-50 border-rose-300 text-rose-700 hover:bg-rose-100 dark:bg-rose-950/50 dark:border-rose-700 dark:text-rose-300 transition-colors"
+              >
+                <Sparkles className="h-3 w-3 mr-1" />
+                Продолжение: как нейросети учатся →
+              </Badge>
+            </a>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
               Трансформеры — архитектура целиком
             </h1>

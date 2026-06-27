@@ -176,13 +176,13 @@ export function Module10Next() {
       </TheoryBlock>
 
       {/* Блок-ссылка на следующий курс */}
-      <div className="rounded-lg border-2 border-lime-300 bg-lime-50/50 dark:border-lime-700 dark:bg-lime-950/30 p-5">
+      <div className="rounded-lg border-2 border-rose-300 bg-rose-50/50 dark:border-rose-700 dark:bg-rose-950/30 p-5">
         <div className="flex items-start gap-3 flex-wrap">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-lime-500 text-white">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-rose-500 text-white">
             <GraduationCap className="h-6 w-6" />
           </div>
           <div className="flex-1 min-w-0">
-            <div className="text-xs uppercase tracking-wide text-lime-700 dark:text-lime-300 font-semibold mb-1">
+            <div className="text-xs uppercase tracking-wide text-rose-700 dark:text-rose-300 font-semibold mb-1">
               Продолжение серии · следующий курс
             </div>
             <h3 className="text-lg font-bold mb-2">
@@ -207,7 +207,7 @@ export function Module10Next() {
             <a href={NN_LEARNING_APP_URL} target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
-                className="bg-lime-600 hover:bg-lime-700 text-white dark:bg-lime-700 dark:hover:bg-lime-600"
+                className="bg-rose-600 hover:bg-rose-700 text-white dark:bg-rose-700 dark:hover:bg-rose-600"
               >
                 <ArrowUpRight className="h-4 w-4 mr-1.5" />
                 Перейти к курсу «Как нейросети учатся»
@@ -220,9 +220,9 @@ export function Module10Next() {
       <SandboxBlock accent={accent} title="Шесть направлений — куда расти дальше">
         <div className="grid sm:grid-cols-2 gap-3">
           {NEXT_TOPICS.map((t) => (
-            <Card key={t.short} className="p-4 border-lime-200 dark:border-lime-800/60">
+            <Card key={t.short} className="p-4 border-rose-200 dark:border-rose-800/60">
               <div className="flex items-start gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-lime-100 text-lime-700 dark:bg-lime-900/50 dark:text-lime-200">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-rose-100 text-rose-700 dark:bg-rose-900/50 dark:text-rose-200">
                   <t.icon className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
@@ -252,9 +252,9 @@ export function Module10Next() {
               rel="noopener noreferrer"
               className="block"
             >
-              <Card className="p-4 border-lime-200 dark:border-lime-800/60 hover:border-lime-400 hover:shadow-md transition-all h-full">
+              <Card className="p-4 border-rose-200 dark:border-rose-800/60 hover:border-rose-400 hover:shadow-md transition-all h-full">
                 <div className="flex items-start gap-3">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-lime-100 text-lime-700 dark:bg-lime-900/50 dark:text-lime-200">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-rose-100 text-rose-700 dark:bg-rose-900/50 dark:text-rose-200">
                     <r.icon className="h-5 w-5" />
                   </div>
                   <div className="min-w-0 flex-1">
@@ -269,7 +269,7 @@ export function Module10Next() {
                     <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">
                       {r.description}
                     </p>
-                    <div className="flex items-center gap-1 text-xs text-lime-700 dark:text-lime-300 mt-2 font-mono">
+                    <div className="flex items-center gap-1 text-xs text-rose-700 dark:text-rose-300 mt-2 font-mono">
                       <ExternalLink className="h-3 w-3" />
                       {r.linkLabel}
                     </div>
@@ -281,8 +281,8 @@ export function Module10Next() {
         </div>
       </SandboxBlock>
 
-      <div className="rounded-lg border-2 border-dashed border-lime-200 bg-lime-50/50 dark:border-lime-800/60 dark:bg-lime-950/30 p-5 text-center">
-        <div className="text-xs uppercase tracking-wide text-lime-700 dark:text-lime-300 font-semibold mb-2">
+      <div className="rounded-lg border-2 border-dashed border-rose-200 bg-rose-50/50 dark:border-rose-800/60 dark:bg-rose-950/30 p-5 text-center">
+        <div className="text-xs uppercase tracking-wide text-rose-700 dark:text-rose-300 font-semibold mb-2">
           Возврат к материнским курсам
         </div>
         <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">

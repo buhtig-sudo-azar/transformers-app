@@ -44,7 +44,7 @@ const STAGES: Stage[] = [
   },
   {
     id: 4,
-    label: "Финальчный LayerNorm",
+    label: "Финальный LayerNorm",
     short: "ln",
     shape: "[batch, seq, d]",
     desc: "После последнего блока — ещё один LayerNorm. Стабилизирует активации перед выходом.",
